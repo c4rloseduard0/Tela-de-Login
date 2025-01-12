@@ -12,60 +12,59 @@ body {
     display: flex;
     flex-direction: column; /* Alinha tudo verticalmente */
     min-height: 100vh;
-    font-size: 0.8em; /* Tamanho de fonte reduzido */
-    padding: 10px;
+    font-size: 1em;
+    padding: 20px;
 }
 
 /* Cabeçalho */
 header {
     text-align: left;
-    margin-bottom: 10px;
-    border-bottom: 4px solid black; /* Borda preta bem destacada */
-    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 header h1 {
     color: #004d7a; /* Azul escuro */
-    font-size: 1em; /* Redução do tamanho da fonte */
+    font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Container Principal */
 main {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: flex-start; /* Alinha os blocos à esquerda */
 }
 
 /* Acesso Administrativo */
 .acesso-administrativo {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     flex: 1;
 }
 
 .acesso-administrativo h2 {
-    font-size: 1em; /* Reduzido */
+    font-size: 1.2em;
     color: #333;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 form label {
-    font-size: 0.8em; /* Tamanho de fonte reduzido */
+    font-size: 0.9em;
     font-weight: 600;
     color: #555;
 }
 
 form input {
-    padding: 8px;
-    font-size: 0.8em; /* Reduzido */
+    padding: 10px;
+    font-size: 0.9em;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -77,7 +76,7 @@ form input:focus {
 
 .esqueceu-senha {
     text-align: right;
-    font-size: 0.7em; /* Reduzido */
+    font-size: 0.8em;
     color: #0065b3;
     text-decoration: none;
 }
@@ -87,8 +86,8 @@ form input:focus {
 }
 
 .btn-entrar {
-    padding: 8px;
-    font-size: 0.8em; /* Reduzido */
+    padding: 10px;
+    font-size: 1em;
     font-weight: 600;
     background-color: #0065b3;
     color: white;
@@ -102,9 +101,9 @@ form input:focus {
 }
 
 .ou {
-    margin: 8px 0;
+    margin: 10px 0;
     text-align: center;
-    font-size: 0.7em; /* Reduzido */
+    font-size: 0.8em;
     color: #555;
 }
 
@@ -119,9 +118,9 @@ form input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    padding: 6px;
-    font-size: 0.7em; /* Reduzido */
+    gap: 10px;
+    padding: 8px;
+    font-size: 0.9em;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -130,7 +129,7 @@ form input:focus {
 }
 
 .btn-govbr img {
-    height: 15px;
+    height: 20px;
     width: auto;
 }
 
@@ -141,7 +140,7 @@ form input:focus {
 /* Acesso Estudante / Responsável */
 .acesso-estudante {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -149,19 +148,19 @@ form input:focus {
 }
 
 .acesso-estudante h2 {
-    font-size: 1em; /* Reduzido */
+    font-size: 1.2em;
     color: #333;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .acesso-estudante button {
     display: block;
     width: 100%;
-    padding: 8px;
-    font-size: 0.8em; /* Reduzido */
+    padding: 10px;
+    font-size: 0.9em;
     font-weight: 600;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -178,17 +177,16 @@ form input:focus {
 }
 
 .acesso-estudante .btn-requisitos {
-    background-color: white; /* Fundo branco */
+    background-color: #66b3ff; /* Azul claro forte */
     color: #004d7a; /* Azul escuro */
-    border: 2px solid #004d7a; /* Borda azul */
 }
 
 .acesso-estudante .btn-requisitos:hover {
-    background-color: #f0f8ff; /* Fundo levemente azulado */
+    background-color: #4da9f2;
 }
 
 .acesso-estudante p {
-    font-size: 0.7em; /* Reduzido */
+    font-size: 0.8em;
     color: #666;
     margin-bottom: 10px;
 }

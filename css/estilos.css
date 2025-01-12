@@ -10,36 +10,37 @@ body {
     background-color: #f7f7f7;
     color: #333;
     display: flex;
-    justify-content: flex-start; /* Alinha os elementos à esquerda */
-    align-items: flex-start; /* Alinha os elementos no topo */
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+    align-items: flex-start; /* Alinha tudo no topo */
     min-height: 100vh;
     padding: 20px; /* Espaçamento geral */
 }
 
 /* Cabeçalho */
 header {
-    text-align: left;
+    text-align: right; /* Alinha o título no lado direito */
     width: 100%;
-    background-color: black; /* Fundo preto */
-    padding: 10px 20px; /* Reduzi o padding */
-    border-bottom: 2px solid #000; /* Borda mais fina */
+    background-color: transparent;
+    padding: 10px 20px; /* Ajuste de padding */
     margin-bottom: 20px;
-    position: relative; /* Permite ajustar a posição */
-    top: -10px; /* Leva o título mais para cima */
 }
 
 header h1 {
-    color: white;
-    font-size: 1.8em; /* Reduzi o tamanho da fonte */
+    color: #004d7a; /* Azul escuro */
+    font-size: 1.8em; /* Tamanho proporcional */
     font-weight: bold;
+    border: 2px solid black;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 4px;
 }
 
 /* Container Principal */
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Elementos lado a lado */
     gap: 20px; /* Espaço entre seções */
-    width: 300px; /* Reduzi a largura */
+    width: 100%; /* Preenchimento horizontal */
 }
 
 /* Acesso Administrativo */
@@ -49,10 +50,11 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    width: 300px; /* Define largura fixa */
 }
 
 .acesso-administrativo h2 {
-    font-size: 1.2em; /* Reduzi o tamanho */
+    font-size: 1.2em;
     color: #333;
     font-weight: 600;
     margin-bottom: 15px;
@@ -61,17 +63,17 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaçamento menor */
+    gap: 10px;
 }
 
 form label {
-    font-size: 0.8em; /* Texto menor */
+    font-size: 0.8em;
     font-weight: 600;
     color: #555;
 }
 
 form input {
-    padding: 8px; /* Reduzi o padding */
+    padding: 8px;
     font-size: 0.9em;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -84,7 +86,7 @@ form input:focus {
 
 .esqueceu-senha {
     text-align: right;
-    font-size: 0.8em; /* Texto menor */
+    font-size: 0.8em;
     color: #0065b3;
     text-decoration: none;
 }
@@ -94,8 +96,8 @@ form input:focus {
 }
 
 .btn-entrar {
-    padding: 8px; /* Reduzi o padding */
-    font-size: 0.9em; /* Reduzi o tamanho */
+    padding: 8px;
+    font-size: 0.9em;
     font-weight: 600;
     background-color: #0065b3;
     color: white;
@@ -111,7 +113,7 @@ form input:focus {
 .ou {
     margin: 10px 0;
     text-align: center;
-    font-size: 0.8em; /* Texto menor */
+    font-size: 0.8em;
     color: #555;
 }
 
@@ -152,11 +154,14 @@ form input:focus {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    text-align: center;
+    width: 300px; /* Mesma largura do acesso administrativo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .acesso-estudante h2 {
-    font-size: 1.2em; /* Texto menor */
+    font-size: 1.2em;
     color: #333;
     font-weight: 600;
     margin-bottom: 15px;
@@ -166,7 +171,7 @@ form input:focus {
     display: block;
     width: 100%;
     padding: 8px;
-    font-size: 0.9em; /* Texto menor */
+    font-size: 0.9em;
     font-weight: 600;
     border: none;
     border-radius: 4px;
@@ -194,7 +199,7 @@ form input:focus {
 }
 
 .acesso-estudante p {
-    font-size: 0.8em; /* Texto menor */
+    font-size: 0.8em;
     color: #666;
     margin-bottom: 10px;
 }

@@ -11,42 +11,36 @@ body {
     color: #333;
     display: flex;
     flex-direction: column; /* Alinha tudo verticalmente */
-    align-items: stretch; /* Usa largura total */
     min-height: 100vh;
     font-size: 1em;
+    padding: 20px;
 }
 
 /* Cabeçalho */
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
     margin-bottom: 20px;
 }
 
 header h1 {
     color: #004d7a; /* Azul escuro */
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Container Principal */
 main {
     display: flex;
-    justify-content: space-between; /* Espaça os dois lados */
-    padding: 0 20px; /* Espaçamento horizontal */
     gap: 20px;
+    justify-content: flex-start; /* Alinha os blocos à esquerda */
 }
 
 /* Acesso Administrativo */
 .acesso-administrativo {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 300px;
+    flex: 1;
 }
 
 .acesso-administrativo h2 {
@@ -146,14 +140,11 @@ form input:focus {
 /* Acesso Estudante / Responsável */
 .acesso-estudante {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 300px;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .acesso-estudante h2 {
@@ -186,12 +177,12 @@ form input:focus {
 }
 
 .acesso-estudante .btn-requisitos {
-    background-color: #80bfff; /* Azul mais claro */
+    background-color: #66b3ff; /* Azul claro forte */
     color: #004d7a; /* Azul escuro */
 }
 
 .acesso-estudante .btn-requisitos:hover {
-    background-color: #66b3ff;
+    background-color: #4da9f2;
 }
 
 .acesso-estudante p {

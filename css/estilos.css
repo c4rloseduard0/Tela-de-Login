@@ -7,38 +7,39 @@
 }
 
 body {
-    background-color: #f7f7f7; /* Fundo neutro */
+    background-color: #f7f7f7;
     color: #333;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start; /* Alinha os elementos à esquerda */
+    align-items: flex-start; /* Alinha os elementos no topo */
     min-height: 100vh;
-    padding-top: 20px; /* Espaço no topo */
+    padding: 20px; /* Espaçamento geral */
 }
 
-/* Estilo do Cabeçalho */
+/* Cabeçalho */
 header {
-    text-align: center;
+    text-align: left;
     width: 100%;
     background-color: black; /* Fundo preto */
-    padding: 15px;
-    border-bottom: 5px solid #000; /* Borda preta */
-    margin-bottom: 40px;
+    padding: 10px 20px; /* Reduzi o padding */
+    border-bottom: 2px solid #000; /* Borda mais fina */
+    margin-bottom: 20px;
+    position: relative; /* Permite ajustar a posição */
+    top: -10px; /* Leva o título mais para cima */
 }
 
 header h1 {
-    color: white; /* Texto branco */
-    font-size: 2.5em; /* Tamanho grande */
+    color: white;
+    font-size: 1.8em; /* Reduzi o tamanho da fonte */
     font-weight: bold;
 }
 
 /* Container Principal */
 main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    width: 80%; /* Ajuste de largura */
+    flex-direction: column;
+    gap: 20px; /* Espaço entre seções */
+    width: 300px; /* Reduzi a largura */
 }
 
 /* Acesso Administrativo */
@@ -46,37 +47,34 @@ main {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
-.acesso-administrativo h4 {
+.acesso-administrativo h2 {
+    font-size: 1.2em; /* Reduzi o tamanho */
     color: #333;
-    font-size: 1.4em;
     font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 15px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px; /* Espaçamento menor */
 }
 
 form label {
-    font-size: 0.9em; /* Texto menor */
+    font-size: 0.8em; /* Texto menor */
     font-weight: 600;
     color: #555;
 }
 
 form input {
-    padding: 10px;
-    font-size: 1em;
+    padding: 8px; /* Reduzi o padding */
+    font-size: 0.9em;
     border: 1px solid #ccc;
     border-radius: 4px;
-    transition: border-color 0.3s ease;
 }
 
 form input:focus {
@@ -86,10 +84,9 @@ form input:focus {
 
 .esqueceu-senha {
     text-align: right;
-    font-size: 0.9em; /* Texto menor */
+    font-size: 0.8em; /* Texto menor */
     color: #0065b3;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .esqueceu-senha:hover {
@@ -97,15 +94,14 @@ form input:focus {
 }
 
 .btn-entrar {
-    padding: 12px;
-    font-size: 1.1em; /* Tamanho médio */
+    padding: 8px; /* Reduzi o padding */
+    font-size: 0.9em; /* Reduzi o tamanho */
     font-weight: 600;
     background-color: #0065b3;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .btn-entrar:hover {
@@ -113,17 +109,17 @@ form input:focus {
 }
 
 .ou {
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em; /* Texto menor */
     color: #555;
 }
 
 .ou span {
     background-color: white;
-    padding: 0 10px;
+    padding: 0 8px;
     position: relative;
-    top: -10px;
+    top: -8px;
 }
 
 .btn-govbr {
@@ -131,22 +127,22 @@ form input:focus {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 12px;
-    font-size: 1.1em;
+    padding: 8px;
+    font-size: 0.9em;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-govbr:hover {
-    background-color: #f0f0f0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .btn-govbr img {
     height: 20px;
+    width: auto;
+}
+
+.btn-govbr:hover {
+    background-color: #f0f0f0;
 }
 
 /* Acesso Estudante / Responsável */
@@ -154,28 +150,27 @@ form input:focus {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
     text-align: center;
 }
 
-.acesso-estudante h4 {
+.acesso-estudante h2 {
+    font-size: 1.2em; /* Texto menor */
     color: #333;
-    font-size: 1.4em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .acesso-estudante button {
     display: block;
     width: 100%;
-    padding: 12px;
-    font-size: 1.1em;
+    padding: 8px;
+    font-size: 0.9em; /* Texto menor */
     font-weight: 600;
     border: none;
     border-radius: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -195,11 +190,11 @@ form input:focus {
 }
 
 .acesso-estudante .btn-requisitos:hover {
-    background-color: #d4e7ff; /* Azul mais claro no hover */
+    background-color: #d4e7ff; /* Azul mais claro */
 }
 
 .acesso-estudante p {
-    font-size: 0.9em;
+    font-size: 0.8em; /* Texto menor */
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }

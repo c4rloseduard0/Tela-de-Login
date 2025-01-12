@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>esqueceu a senha</title>
+    <title>Esqueceu a Senha</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Link para o arquivo CSS -->
 </head>
 <body>
-    <p>Não Lembra sua senha? Eu também não.</p>
-    <form>
-        <label>Insira seu número de celular ou endereço de email.</label>
-        <input type="text" required>
-        <button type="submit">Continuar</button>
-        <p>Não aconteceu nada? E nem vai, eu nao sei o que fazer depois disso. </p>
-    </form>
+    <header>
+        <h1>Recuperação de Senha</h1>
+    </header>
+    <main>
+        <section class="esqueceu-senha">
+            <p>Não lembra sua senha? Não se preocupe, podemos ajudar!</p>
+            <form>
+                <label for="contato">Insira seu número de celular ou endereço de e-mail:</label>
+                <input type="text" id="contato" placeholder="Digite seu contato" required>
+                <button type="submit">Continuar</button>
+            </form>
+            <p class="info-extra">Se não funcionar, entre em contato com o suporte.</p>
+        </section>
+    </main>
 </body>
 </html>

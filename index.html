@@ -3,46 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Acadêmico</title>
+    <title>Sistema Acadêmico - Login</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Sistema Acadêmico</h1>
     </header>
-
-    <div class="acesso-administrativo">
-        <h4>Acesso Administrativo</h4>
-        <form>
-            <div class="login">
+    <main>
+        <section class="acesso-administrativo">
+            <h2>Acesso Administrativo</h2>
+            <form>
                 <label for="login">Login (nome.sobrenome)</label>
-                <input id="login" type="text" required>
-            </div>
-            <div class="senha">
+                <input type="text" id="login" required>
                 <label for="senha">Senha</label>
-                <input id="senha" type="password" required>
+                <input type="password" id="senha" required>
+                <a href="esqueceu_sua_senha.html" class="esqueceu-senha">Esqueceu sua senha?</a>
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+            <div class="ou">
+                <span>OU</span>
             </div>
-            <div class="esqueceu-a-senha">
-                <a href="esqueceu_sua_senha.html">Esqueceu sua senha</a>
-            </div>
-            <button type="submit" class="btn-submit">Entrar</button>
-        </form>
-        <div class="ou">
-            <span><strong>OU</strong></span>
-        </div>
-        <button type="button">
-            Entrar com <img src="img/govbr-colorido-b.png" alt="Gov.br" style="height: 45px; width: 160px;">
-        </button>
-    </div>
-
-    <div class="estudante-responsavel">
-        <h4>Acesso Estudante / Responsável</h4>
-        <button type="button" class="button1">Área do Estudante</button>
-        <p>Acompanhe o desenvolvimento do Sistema Acadêmico</p>
-        <button type="button" class="button2">Planilha com Requisitos</button>
-    </div>
+            <button type="button" class="btn-govbr">
+                Entrar com <img src="img/govbr-logo.png" alt="GovBR">
+            </button>
+        </section>
+        <section class="acesso-estudante">
+            <h2>Acesso Estudante / Responsável</h2>
+            <button type="button" class="btn-area-estudante">Área do Estudante</button>
+            <p>Acompanhe o desenvolvimento do Sistema Acadêmico</p>
+            <button type="button" class="btn-requisitos">Planilha com Requisitos</button>
+        </section>
+    </main>
 </body>
 </html>

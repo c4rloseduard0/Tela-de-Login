@@ -10,37 +10,33 @@ body {
     background-color: #f7f7f7;
     color: #333;
     display: flex;
-    justify-content: flex-start; /* Alinha tudo à esquerda */
-    align-items: flex-start; /* Alinha tudo no topo */
+    flex-direction: column; /* Alinha tudo verticalmente */
+    align-items: stretch; /* Usa largura total */
     min-height: 100vh;
-    padding: 20px; /* Espaçamento geral */
+    font-size: 1em;
 }
 
 /* Cabeçalho */
 header {
-    text-align: right; /* Alinha o título no lado direito */
-    width: 100%;
-    background-color: transparent;
-    padding: 10px 20px; /* Ajuste de padding */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
     margin-bottom: 20px;
 }
 
 header h1 {
     color: #004d7a; /* Azul escuro */
-    font-size: 1.8em; /* Tamanho proporcional */
+    font-size: 1.8em;
     font-weight: bold;
-    border: 2px solid black;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 4px;
 }
 
 /* Container Principal */
 main {
     display: flex;
-    flex-direction: row; /* Elementos lado a lado */
-    gap: 20px; /* Espaço entre seções */
-    width: 100%; /* Preenchimento horizontal */
+    justify-content: space-between; /* Espaça os dois lados */
+    padding: 0 20px; /* Espaçamento horizontal */
+    gap: 20px;
 }
 
 /* Acesso Administrativo */
@@ -50,7 +46,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 300px; /* Define largura fixa */
+    width: 300px;
 }
 
 .acesso-administrativo h2 {
@@ -67,13 +63,13 @@ form {
 }
 
 form label {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 600;
     color: #555;
 }
 
 form input {
-    padding: 8px;
+    padding: 10px;
     font-size: 0.9em;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -96,8 +92,8 @@ form input:focus {
 }
 
 .btn-entrar {
-    padding: 8px;
-    font-size: 0.9em;
+    padding: 10px;
+    font-size: 1em;
     font-weight: 600;
     background-color: #0065b3;
     color: white;
@@ -154,7 +150,7 @@ form input:focus {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 300px; /* Mesma largura do acesso administrativo */
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +166,7 @@ form input:focus {
 .acesso-estudante button {
     display: block;
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 0.9em;
     font-weight: 600;
     border: none;
@@ -186,16 +182,16 @@ form input:focus {
 }
 
 .acesso-estudante .btn-area-estudante:hover {
-    background-color: #218838; /* Verde mais escuro */
+    background-color: #218838;
 }
 
 .acesso-estudante .btn-requisitos {
-    background-color: #e6f0ff; /* Azul clarinho */
-    color: #0065b3; /* Azul escuro */
+    background-color: #80bfff; /* Azul mais claro */
+    color: #004d7a; /* Azul escuro */
 }
 
 .acesso-estudante .btn-requisitos:hover {
-    background-color: #d4e7ff; /* Azul mais claro */
+    background-color: #66b3ff;
 }
 
 .acesso-estudante p {

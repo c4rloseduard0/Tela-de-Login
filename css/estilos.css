@@ -26,13 +26,13 @@ header h1 {
     color: #004d7a; /* Azul escuro */
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Container Principal */
 main {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: flex-start; /* Alinha os blocos à esquerda */
 }
 
@@ -178,7 +178,7 @@ form input:focus {
 
 .acesso-estudante .btn-requisitos {
     background-color: #66b3ff; /* Azul claro forte */
-    color: #004d7a; /* Azul escuro */
+    color: #fafafae3; 
 }
 
 .acesso-estudante .btn-requisitos:hover {
@@ -186,7 +186,7 @@ form input:focus {
 }
 
 .acesso-estudante p {
-    font-size: 0.8em;
+    font-size: 0.2em;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }

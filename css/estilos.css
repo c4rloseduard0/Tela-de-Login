@@ -27,6 +27,8 @@ header h1 {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 20px;
+    border-color: #000000;
+    border-width: 4px;
 }
 
 /* Container Principal */
@@ -129,7 +131,7 @@ form input:focus {
 }
 
 .btn-govbr img {
-    height: 20px;
+    height: 30px;
     width: auto;
 }
 
@@ -186,7 +188,7 @@ form input:focus {
 }
 
 .acesso-estudante p {
-    font-size: 0.2em;
-    color: #666;
+    font-size: 0.8em;
+    color: #000000;
     margin-bottom: 4px;
 }

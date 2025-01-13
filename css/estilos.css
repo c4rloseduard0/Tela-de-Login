@@ -1,9 +1,21 @@
-*{
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    font-family: calibri;
-    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Alinha tudo verticalmente */
+    min-height: 100vh;
+    font-size: 1em;
+    padding: 20px;
+}
+
 header{
     background-color: #1f2021;
     height: 50px;
@@ -15,111 +27,165 @@ header h1{
     margin-top: 7px;
     margin-left: 7px;
 }
-h2{
-    color: #1f2021;
-    margin-left: 7px;
-    margin-top: 7px;
+
+
+main {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start; 
 }
-.login{
-    margin: 7px 7px;
-    padding: 10px;
-    border: 1px solid #cbcbcb;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    color: #1f2021;
-    width: 200px;
-    height: 250px;
+
+/* Acesso Administrativo */
+.acesso-administrativo {
+    background-color: white;
+    padding: 15px;
+    flex: 1;
 }
-form input{
+
+.acesso-administrativo h2 {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #555;
+}
+
+form input {
     padding: 10px;
-    border: 1px solid #cbcbcb;
-    border-radius: 5px;
-    font-size: 1rem;
-    resize: none;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:focus {
+    border-color: #0065b3;
     outline: none;
-    margin: 3px 0;
 }
-.login a{
-    color: #5d9fb5;
+
+.esqueceu-senha {
+    text-align: right;
+    font-size: 0.8em;
+    color: #0065b3;
+    text-decoration: none;
 }
-form button{
+
+.esqueceu-senha:hover {
+    color: #004d7a;
+}
+
+.btn-entrar {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #0065b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    padding: 10px 16px;
-    font-size: 1rem;
-    color: #FFF;
-    background-color: #1f61af;
-    border: 1px solid #13498a;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 3px 0;
 }
-.botao-gov{
-    align-content: center;
-    width: 200px;
+
+.btn-entrar:hover {
+    background-color: #004d7a;
 }
-#gov-button{
-    cursor: pointer;
-    padding: 10px 16px;
-    font-size: 1rem;
-    color: #1f2021;
-    background-color: #f1f1f1;
-    border: 1px solid #cbcbcb;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 3px 0;
-    margin-left: 7px;
+
+.ou {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #555;
 }
-img{
-    width: 40px;
+
+.ou span {
+    background-color: white;
+    padding: 0 8px;
+    position: relative;
+    top: -8px;
 }
-.botoes{
-    color: #1f2021;
-}
-.area-estudante{
-    margin-left: 250px;
-    margin-top: -385px;
-}
-.Planilha{
-    margin-left: 250px;
-    margin-top: 50px;
-}
-#verde{
-    cursor: pointer;
-    padding: 10px 16px;
-    font-size: 1rem;
-    color: #FFF;
-    background-color: #6bb05d;
-    border: 1px solid #4b863f;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 3px 0;
-    margin-left: 7px;
-}
-#azul{
-    cursor: pointer;
-    padding: 10px 16px;
-    font-size: 1rem;
-    color: #FFF;
-    background-color: #1f61af;
-    border: 1px solid #13498a;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 3px 0;
-    margin-left: 6px;
-}
-.linha-completa{
+
+.btn-govbr {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    gap: 7px;
+    padding: 8px;
+    font-size: 0.9em;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.linha-esquerda, .linha-direita{
-    flex-grow: 1;
+
+.btn-govbr img {
+    height: 30px;
+    width: auto;
+}
+
+.btn-govbr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Acesso Estudante / Responsável */
+.acesso-estudante {
+    background-color: white;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.acesso-estudante h2 {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.acesso-estudante button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: 300;
     border: none;
-    border-top: 1px solid #1f2021;
-    margin: 0;
-    margin-left: 20px;
-}  
-h4{
-    margin: 0 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acesso-estudante .btn-area-estudante {
+    background-color: #28a745; 
+    color: white;
+}
+
+.acesso-estudante .btn-area-estudante:hover {
+    background-color: #218838;
+}
+
+.acesso-estudante .btn-requisitos {
+    background-color: #66b3ff; 
+    color: #fafafae3; 
+}
+
+.acesso-estudante .btn-requisitos:hover {
+    background-color: #4da9f2;
+}
+
+.acesso-estudante p {
+    font-size: 0.8em;
+    color: #000000;
+    margin-bottom: 4px;
 }

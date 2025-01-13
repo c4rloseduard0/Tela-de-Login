@@ -1,4 +1,3 @@
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ body {
     background-color: #f7f7f7;
     color: #333;
     display: flex;
-    flex-direction: column; /* Alinha tudo verticalmente */
+    flex-direction: column;
     min-height: 100vh;
     font-size: 1em;
     padding: 20px;
@@ -35,7 +34,6 @@ main {
     justify-content: flex-start; 
 }
 
-/* Acesso Administrativo */
 .acesso-administrativo {
     background-color: white;
     padding: 15px;
@@ -136,7 +134,6 @@ form input:focus {
     background-color: #f0f0f0;
 }
 
-/* Acesso Estudante / Responsável */
 .acesso-estudante {
     background-color: white;
     padding: 15px;

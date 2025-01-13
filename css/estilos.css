@@ -34,7 +34,7 @@ header h1 {
 /* Container Principal */
 main {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     justify-content: flex-start; /* Alinha os blocos à esquerda */
 }
 
@@ -55,7 +55,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 form label {
@@ -120,7 +120,7 @@ form input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 7px;
     padding: 8px;
     font-size: 0.9em;
     background-color: white;
@@ -152,7 +152,7 @@ form input:focus {
 .acesso-estudante h2 {
     font-size: 1.2em;
     color: #333;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
@@ -161,7 +161,7 @@ form input:focus {
     width: 100%;
     padding: 10px;
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
     border-radius: 4px;
     margin-bottom: 10px;

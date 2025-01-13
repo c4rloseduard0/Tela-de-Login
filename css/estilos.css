@@ -1,194 +1,109 @@
-/* Reset de estilos */
-* {
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; 
 }
 
-body {
-    background-color: #f7f7f7;
-    color: #333;
-    display: flex;
-    flex-direction: column; /* Alinha tudo verticalmente */
-    min-height: 100vh;
-    font-size: 1em;
-    padding: 20px;
-}
 
-/* Cabeçalho */
-header {
+
+header .logo{
+    
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
     text-align: left;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    color: #004d7a; /* Azul escuro */
-    font-size: 1.5em;
     font-weight: bold;
+}
+
+section{
+    min-height: 20px;
+    padding: 19px;
     margin-bottom: 20px;
-    border-color: #000000;
-    border-width: 4px;
+    background-color: transparent;
+    float: left;
+    width: 20%;
+  
 }
+.bloco-do-formulario{
+    background-color:#f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    }
+    form {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        .logar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            border-style: solid;
+            border-radius: 10px;
+            color: blue;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            width: 30%;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        
+    }
+    p{
+        text-align: center;
+    }
+.botao-do-gov {
+        margin-top: 30px;
+        gap: 40px;
+        padding: 5px 10px;
+        width: auto;
+        width: 100%;
+        img {
+            width: 30%;
+        }
+    }
 
-/* Container Principal */
-main {
+.bloco-dos-botoes{
     display: flex;
-    gap: 5px;
-    justify-content: flex-start; /* Alinha os blocos à esquerda */
-}
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+    .estudante{
+        background-color: #005007;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 60%;
+        text-align: center;
+    }
+    .requisitos{
+        background-color: #04818a;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 60%;
+        text-align: center;
+    }
 
-/* Acesso Administrativo */
-.acesso-administrativo {
-    background-color: white;
-    padding: 15px;
-    flex: 1;
+    
 }
-
-.acesso-administrativo h2 {
-    font-size: 1.2em;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-form label {
-    font-size: 0.9em;
-    font-weight: 600;
-    color: #555;
-}
-
-form input {
-    padding: 10px;
-    font-size: 0.9em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form input:focus {
-    border-color: #0065b3;
-    outline: none;
-}
-
-.esqueceu-senha {
-    text-align: right;
-    font-size: 0.8em;
-    color: #0065b3;
-    text-decoration: none;
-}
-
-.esqueceu-senha:hover {
-    color: #004d7a;
-}
-
-.btn-entrar {
-    padding: 10px;
-    font-size: 1em;
-    font-weight: 600;
-    background-color: #0065b3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn-entrar:hover {
-    background-color: #004d7a;
-}
-
-.ou {
-    margin: 10px 0;
+footer{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 0.8em;
-    color: #555;
-}
-
-.ou span {
-    background-color: white;
-    padding: 0 8px;
-    position: relative;
-    top: -8px;
-}
-
-.btn-govbr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    padding: 8px;
-    font-size: 0.9em;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-govbr img {
-    height: 30px;
-    width: auto;
-}
-
-.btn-govbr:hover {
-    background-color: #f0f0f0;
-}
-
-/* Acesso Estudante / Responsável */
-.acesso-estudante {
-    background-color: white;
-    padding: 15px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.acesso-estudante h2 {
-    font-size: 1.2em;
-    color: #333;
-    font-weight: 300;
-    margin-bottom: 15px;
-}
-
-.acesso-estudante button {
-    display: block;
-    width: 100%;
     padding: 10px;
-    font-size: 0.9em;
-    font-weight: 300;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.acesso-estudante .btn-area-estudante {
-    background-color: #28a745; /* Verde */
-    color: white;
-}
-
-.acesso-estudante .btn-area-estudante:hover {
-    background-color: #218838;
-}
-
-.acesso-estudante .btn-requisitos {
-    background-color: #66b3ff; /* Azul claro forte */
-    color: #fafafae3; 
-}
-
-.acesso-estudante .btn-requisitos:hover {
-    background-color: #4da9f2;
-}
-
-.acesso-estudante p {
-    font-size: 0.8em;
-    color: #000000;
-    margin-bottom: 4px;
-}
